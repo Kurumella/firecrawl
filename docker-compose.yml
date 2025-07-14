@@ -5,7 +5,7 @@ services:
   # Build playwright service from FireCrawl source
   playwright-service:
     build:
-      context: https://github.com/mendableai/firecrawl.git#main
+      context: https://github.com/Kurumella/firecrawl.git#main
       dockerfile: apps/playwright-service-ts/Dockerfile
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
   # Build API from FireCrawl source
   api:
     build:
-      context: https://github.com/mendableai/firecrawl.git#main
+      context: https://github.com/Kurumella/firecrawl.git#main
       dockerfile: apps/api/Dockerfile
     restart: unless-stopped
     environment:
@@ -65,7 +65,7 @@ services:
   # Build worker from FireCrawl source
   worker:
     build:
-      context: https://github.com/mendableai/firecrawl.git#main
+      context: https://github.com/Kurumella/firecrawl.git#main
       dockerfile: apps/api/Dockerfile
     restart: unless-stopped
     environment:
