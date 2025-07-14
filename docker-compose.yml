@@ -6,7 +6,7 @@ services:
   playwright-service:
     build:
       context: https://github.com/mendableai/firecrawl.git#main
-      dockerfile: apps/playwright-service/Dockerfile
+      dockerfile: apps/playwright-service-ts/Dockerfile
     restart: unless-stopped
     environment:
       - PORT=3000
